@@ -17,6 +17,16 @@
             require-prior-idle-ms = <0>;
             flavor = "tap-preferred";
         };
+
+        lt_hp: lt_hp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAYER_TAP_BY_HOLD_TAP_HOLD_PREFERRED";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "hold-preferred";
+            bindings = <&mo>, <&kp>;
+        };
     };
 
     combos {
@@ -50,7 +60,7 @@
                 &kp Q        &kp W        &kp E        &kp R        &kp T        &kp Y        &kp U        &kp I        &kp O        &kp P        &kp BSPC
                 &kp A        &kp S        &kp D        &kp F        &kp G        &kp H        &kp J        &kp K        &kp L        &kp ENTER
                 &kp Z        &kp X        &kp C        &kp V        &kp B        &kp N        &kp M        &kp COMMA    &kp PERIOD   &kp SLASH
-                &none        &kp LGUI     &mo 3        &ht_hp LSHFT SPACE        &lt 1 SPACE               &mo 2        &kp LCTRL    &none
+                &none        &kp LGUI     &mo 3        &ht_hp LSHFT SPACE        &lt_hp 1 SPACE            &mo 2        &kp LCTRL    &none
             >;
         };
 
