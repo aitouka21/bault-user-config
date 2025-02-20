@@ -31,6 +31,7 @@
             timeout-ms = <100>;
             key-positions = <11 12>;
             bindings = <&kp LCTRL>;
+            slow-release = true;
         };
 
         combo_tab {
@@ -49,14 +50,14 @@
                 &kp Q        &kp W        &kp E        &kp R        &kp T        &kp Y        &kp U        &kp I        &kp O        &kp P        &kp BSPC
                 &kp A        &kp S        &kp D        &kp F        &kp G        &kp H        &kp J        &kp K        &kp L        &kp ENTER
                 &kp Z        &kp X        &kp C        &kp V        &kp B        &kp N        &kp M        &kp COMMA    &kp PERIOD   &kp SLASH
-                &none        &kp LGUI     &mo 3        &mt LSHFT SPACE           &lt 1 SPACE               &mo 2        &kp LCTRL    &none
+                &none        &kp LGUI     &mo 3        &ht_hp LSHFT SPACE        &lt 1 SPACE               &mo 2        &kp LCTRL    &none
             >;
         };
 
         layer_1 {
             bindings = <
                 &kp N1       &kp N2       &kp N3       &kp N4       &kp N5       &kp N6       &kp N7       &kp N8       &kp N9       &kp N0       &trans
-                &kp GRAVE    &kp LBKT     &kp RBKT     &kp NUBS     &trans       &trans       &kp MINUS    &kp EQUAL    &kp SEMI     &kp SQT
+                &kp GRAVE    &kp LBKT     &kp RBKT     &kp BSLH     &trans       &trans       &kp MINUS    &kp EQUAL    &kp SEMI     &kp SQT
                 &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans
                 &none        &trans       &trans       &trans                    &trans                    &trans       &trans       &none
             >;
