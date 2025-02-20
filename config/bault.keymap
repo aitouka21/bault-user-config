@@ -23,19 +23,19 @@
         compatible = "zmk,combos";
         combo_ecs {
             timeout-ms =  <100>;
-            key-positions = <16 17>;
+            key-positions = <13 14>;
             bindings = <&kp ESC>;
         };
 
         combo_lctrl {
             timeout-ms = <100>;
-            key-positions = <12 13>;
-            bindings = <&kp TAB>;
+            key-positions = <11 12>;
+            bindings = <&kp LCTRL>;
         };
 
         combo_tab {
             timeout-ms = <100>;
-            key-positions = <14 15>;
+            key-positions = <0 1>;
             bindings = <&kp TAB>;
         };
     };
@@ -75,7 +75,7 @@
             bindings = <
                 &kp F1       &kp F2       &kp F3       &kp F4       &kp F5       &kp F6       &kp F7       &kp F8       &none        &none        &kp DEL
                 &kp F9       &kp F10      &kp F11      &kp F12      &none        &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT    &trans
-                &bt BT_CLR   &bt BT_NXT   &none        &none        &none        &none        &none        &none        &none        &none
+                &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &none        &none        &none        &none        &none        &none        &none
                 &none        &trans       &trans       &trans                    &trans                    &bootloader  &trans       &none
             >;
         };
