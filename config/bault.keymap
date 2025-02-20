@@ -29,7 +29,6 @@
             timeout-ms = <100>;
             key-positions = <11 12>;
             bindings = <&kp LCTRL>;
-            slow-release = true;
         };
 
         combo_tab {
